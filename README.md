@@ -1,6 +1,10 @@
 # Flutter Bloc Counter
 
-How to do a flutter 
+Using BLoC pattern, there is two options :
+1. HomePageBlocProvider : BlocProvider, BlocBuilder and BlocProvider.of<CounterBloc>(context).add
+2. HomePageVarBloc : variable _bloc,  BlocBuilder/cubit and _bloc.add
+
+These two options use the same code inside lib/bloc/counter
 
 ![](assets/show-project.gif)
 
