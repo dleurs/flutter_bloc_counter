@@ -1,6 +1,8 @@
-# flutter_bloc_counter
+# Flutter Bloc Counter
 
-A new Flutter project.
+How to do a flutter 
+
+![](assets/show-project.gif)
 
 ## Getting Started
 
