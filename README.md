@@ -14,10 +14,3 @@ https://bloclibrary.dev/#/gettingstarted
 https://pub.dev/packages/flutter_bloc
 
 
-Settup slow internet : 
-- https://medium.com/macoclock/ios-simulator-simulates-slow-network-connection-615f910a2f43<br/>
-- https://developer.apple.com/download/more/?=for%20Xcode<br/>
-- Download Additional_Tools_for_Xcode then install Hardware > Network Link Conditioner.prefPane
-
-![](assets/network-link-1.gif)
-![](assets/network-link-2.gif)
