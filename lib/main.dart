@@ -10,23 +10,22 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  bool useBlocProvierInsteadOfVarBloc = true;
+  //bool useBlocProvierInsteadOfVarBloc = true;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: (useBlocProvierInsteadOfVarBloc)
-          ? BlocProvider<CounterBloc>(
-              create: (context) => CounterBloc(),
-              child: HomePageBlocProvider(title: 'Flutter Demo Home Page'),
-            )
-          : HomePageVarBloc(title: 'Flutter Demo Home Page'),
-/*        */
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: //(useBlocProvierInsteadOfVarBloc) ?
+            BlocProvider<CounterBloc>(
+          create: (context) => CounterBloc(),
+          child: HomePageBlocProvider(title: 'Flutter Demo Home Page'),
+        )
+        //: HomePageVarBloc(title: 'Flutter Demo Home Page'),
+        );
   }
 }
 
