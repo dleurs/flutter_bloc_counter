@@ -3,20 +3,29 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc_counter/bloc/counter/counter_event.dart';
 import 'package:flutter_bloc_counter/bloc/counter/counter_state.dart';
+import 'package:equatable/equatable.dart';
 
 class CounterBloc extends Bloc<CounterEvent, CounterState> {
-  int counter;
+  int count;
 
-  CounterBloc({this.counter = 0}) : super(InitialCounterState(counter));
+  CounterBloc({this.count = 0}) : super(InitialCounterState(count));
 
   @override
   Stream<CounterState> mapEventToState(CounterEvent event) async* {
     if (event is IncrementCounterEvent) {
-      this.counter = this.counter + 1;
-      yield UpdatedCounterState(this.counter);
+      this.count = this.count + 1;
+      yield UpdatedCounterState(this.count);
     } else if (event is DecrementCounterEvent) {
-      this.counter = this.counter - 1;
-      yield UpdatedCounterState(this.counter);
+      this.count = this.count - 1;
+      yield UpdatedCounterState(this.count);
+    } else {
+      throw UnknownEventException();
     }
   }
+}
+
+class UnknownEventException extends Equatable implements Exception {
+  const UnknownEventException();
+  @override
+  List<Object> get props => [];
 }
