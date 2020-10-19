@@ -14,3 +14,7 @@ https://bloclibrary.dev/#/gettingstarted
 https://pub.dev/packages/flutter_bloc
 
 
+Course on Udemy<br/>
+https://www.udemy.com/course/flutter-firebase-build-a-complete-app-for-ios-android/learn/lecture/14609420#overview
+
+
